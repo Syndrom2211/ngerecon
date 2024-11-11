@@ -20,6 +20,7 @@ Saya sudah bilang di atas, ini merupakan toolkit sederhana UNIX yang berfungsi s
 - 📂 **Cari File Web**: Tidak hanya informasi, siapa tahu ada file web yang sensitif.
 - 🔍 **Cari Parameter di Web**: Menemukan parameter-parameter penting untuk pentest, seperti SQLi, XSS, dll.
 - 🚀 **Identifikasi Web lagi**: Bila identifikasi pertama kurang lengkap.
+- 🧩 **Obral File JavaScript**: Ngobral dulu file JavaScript, siapa tahu ada celah rentan, bro!
 
 ---
 
