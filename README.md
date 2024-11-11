@@ -55,6 +55,8 @@ Clone repositori ini ke mesin lokal kamu menggunakan Git:
    ```bash
    git clone https://github.com/username/repository-name.git
 
+---
+
 ## 🤝 **Kontribusi**
 Jika Anda ingin berkontribusi pada proyek ini, ikuti langkah-langkah berikut:
 1. Fork repositori ini.
@@ -63,7 +65,12 @@ Jika Anda ingin berkontribusi pada proyek ini, ikuti langkah-langkah berikut:
 4. Push ke branch (git push origin feature/fitur-baru).
 5. Buat pull request.
 
+---
+
 ## 📜 **Lisensi**
 Proyek ini dilisensikan di bawah MIT License.
 
-Terima kasih telah menggunakan nge-Recon! Selamat berburu informasi! 🕵️‍♂️🔍
+---
+
+Terima kasih telah menggunakan nge-Recon!
+Selamat berburu informasi! 🕵️‍♂️🔍
