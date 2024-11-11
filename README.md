@@ -44,24 +44,29 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini:
    ```bash
    python3 ngerecon.py
 
-📥 Clone Repository
-Clone repositori ini ke mesin lokal kamu menggunakan Git: git clone https://github.com/username/repository-name.git
+---
 
-🤝 Kontribusi
+## 📥 **Clone Repository**
+Clone repositori ini ke mesin lokal kamu menggunakan Git: 
+- Clone:
+   ```bash
+   chmod +x install_tools.sh
+
+## 🤝 **Kontribusi**
 Jika Anda ingin berkontribusi pada proyek ini, ikuti langkah-langkah berikut:
-
 1. Fork repositori ini.
 2. Buat branch baru untuk perubahan Anda (git checkout -b feature/fitur-baru).
 3. Commit perubahan Anda (git commit -am 'Menambahkan fitur baru').
 4. Push ke branch (git push origin feature/fitur-baru).
 5. Buat pull request.
 
-📜 Lisensi
+## 📜 **Lisensi**
 Proyek ini dilisensikan di bawah MIT License.
 
-📬 Kontak
+## 📬 **Kontak**
 Nama: Adam Sasmita
 Email: firdamdamsasmita@upi.edu
+Instagram: adamsasmi
 GitHub: https://github.com/Syndrom2211
 
 Terima kasih telah menggunakan nge-Recon! Selamat berburu informasi! 🕵️‍♂️🔍
