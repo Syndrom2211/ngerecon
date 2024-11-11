@@ -69,20 +69,98 @@ def main():
     
     # Membuat file HTML untuk hasil scan
     with open(f"{output_folder}/hasil_nyari_info.html", "w") as f:
-        f.write(f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Hasil Scan Domain {domain}</title>
-                    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-                    <style>
-                        body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }}
-                        h1, h2 {{ color: #007bff; font-size: 1.75rem; font-weight: 600; }}
-                        .section {{ margin-bottom: 20px; }}
-                        .card {{ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: none; }}
-                        .card-header {{ background-color: #007bff; color: white; font-size: 1.25rem; font-weight: bold; }}
-                        .card-body {{ background-color: #f4f4f4; max-height: 300px; overflow-y: scroll; padding: 15px; border-radius: 5px; }}
-                        .output {{ white-space: pre-wrap; word-wrap: break-word; }}
-                    </style></head><body class="container">
-                    <h1>Domain Website: {domain}</h1>""")
+        f.write(f"""<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hasil Scan Domain {domain}</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+        <style>
+            body {{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 20px;
+                background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+                color: white;
+                animation: fadeIn 2s ease-in-out; /* Animation effect on page load */
+            }}
+            h1 {{
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 30px;
+                animation: slideIn 1s ease-out; /* Animation for header */
+            }}
+            .section {{
+                margin-bottom: 20px;
+            }}
+            .card {{
+                border: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                overflow: hidden;
+                transition: transform 0.3s ease; /* Smooth transition for hover */
+            }}
+            .card:hover {{
+                transform: scale(1.05); /* Scale up card on hover */
+            }}
+            .card-header {{
+                background: linear-gradient(to right, #f39c12, #e74c3c); /* Gradient header */
+                color: white;
+                font-size: 1.25rem;
+                font-weight: bold;
+                border-bottom: 2px solid #d07444;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }}
+            .card-header i {{
+                font-size: 1.5rem;
+                margin-right: 10px;
+            }}
+            .card-body {{
+                background-color: #f4f4f4;
+                padding: 15px;
+                border-radius: 5px;
+                max-height: 300px;
+                overflow-y: scroll;
+            }}
+            .output {{
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }}
+            .card-body pre {{
+                margin: 0;
+            }}
+            .icon-section {{
+                font-size: 1.5rem;
+                color: #fff; /* Warna ikon putih untuk kontras dengan gradient */
+                margin-right: 10px;
+            }}
+            .alert-box {{
+                margin-top: 20px;
+                border-left: 4px solid #f39c12;
+                background-color: #f9f9f9;
+                padding: 10px;
+                animation: fadeInUp 1.5s ease-out;
+            }}
+            @keyframes fadeIn {{
+                0% {{ opacity: 0; }}
+                100% {{ opacity: 1; }}
+            }}
+            @keyframes slideIn {{
+                0% {{ transform: translateX(-100%); }}
+                100% {{ transform: translateX(0); }}
+            }}
+            @keyframes fadeInUp {{
+                0% {{ opacity: 0; transform: translateY(30px); }}
+                100% {{ opacity: 1; transform: translateY(0); }}
+            }}
+        </style>
+    </head>
+    <body class="container">
+        <h1><i class="fas fa-search"></i> Hasil Scan Domain: {domain}</h1>""")
 
         file_titles = {
             "cmseek_output.txt": "Cek CMS",
@@ -101,14 +179,15 @@ def main():
                 f.write(f"""
                     <div class="section">
                         <div class="card">
-                            <div class="card-header">{title}</div>
+                            <div class="card-header"><i class="fas fa-cogs icon-section"></i> {title}</div>
                             <div class="card-body output"><pre>{content}</pre></div>
                         </div>
                     </div>""")
 
         f.write("</body></html>")
-        
+
     print("Selesai! Hasil scan telah tersimpan di folder results berupa HTML!")
+
 
 if __name__ == "__main__":
     main()
