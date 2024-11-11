@@ -1,30 +1,30 @@
 # **nge-Recon - Toolkit Information Gathering**
-> Toolkit sederhana yang berfungsi sebagai wadah perkumpulan tools - tools reconaisance hasil karya developer/pentester yang dipadukan untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconaisance). Cukup masukin 1 domain, hasil berseleweran... wus.. wus..
+> Toolkit sederhana UNIX yang berfungsi sebagai wadah perkumpulan tools - tools reconaisance hasil karya developer/pentester yang dipadukan untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconaisance). Cukup masukin 1 domain, hasil berseleweran... wus.. wus..
 
 ![Project Banner](https://i.ibb.co.com/pLJf2BK/ngerecon1.jpg)
 ![Project Banner](https://i.ibb.co.com/z2cbzMx/ngerecon2.jpg)
 
-## **Deskripsi Proyek**
-Deskripsi lengkap tentang proyek ini, tujuan, dan apa yang ingin dicapai. Jelaskan fitur utama dan manfaat dari proyek ini.
+## **Deskripsi Tambahan**
+Saya sudah bilang diatas, Ini merupakan toolkit sederhana UNIX yang berfungsi sebagai wadah perkumpulan tools - tools reconaisance hasil karya developer/pentester yang dipadukan untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconaisance). Cukup masukin 1 domain, hasil berseleweran... wus.. wus..
+#masa harus diulang - ulang ;P
 
 ### **Fitur Utama**
-- **Fitur 1**: Deskripsi fitur 1.
-- **Fitur 2**: Deskripsi fitur 2.
-- **Fitur 3**: Deskripsi fitur 3.
-- **Fitur 4**: Deskripsi fitur 4.
+- **Cek CMS / Bukan**: Deskripsi fitur 1.
+- **Cek Subdomain**: Barangkali aja ada.
+- **Cek Subdomain lagi**: Barangkali aja ada.
+- **Identifikasi Web**: Barangkali dapat informasi sensitif.
 
 ## **Demo**
-Tautan atau cuplikan video yang menunjukkan cara proyek ini berfungsi.
-
-> **Catatan**: Demo hanya untuk tujuan ilustrasi.
-
-[![Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+Hehe, Gak ada demo foto / video, mudah kok. Lihat cara instalasi dibawah ini.
 
 ## **Instalasi**
-
-Ikuti langkah-langkah berikut untuk menginstal proyek ini ke dalam mesin lokal Anda.
-
+Langkahnya:
+1. chmod +x install_tools.sh
+2. ./install_tools.sh
+3. pip install -r requirements.txt
+4. Jalanin deh : python3 ngerecon.py
+ 
 ### 1. **Clone Repository**
-Clone repositori ini ke mesin lokal Anda menggunakan Git:
+Clone repositori ini ke mesin lokal kamu menggunakan Git:
 ```bash
 git clone https://github.com/username/repository-name.git
