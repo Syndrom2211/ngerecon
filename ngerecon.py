@@ -75,13 +75,15 @@ def main():
                     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
                     <style>
                         body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; background-color: #f8f9fa; }}
-                        h1, h2 {{ color: #007bff; font-size: 2rem; }}
+                        h1, h2 {{ color: #007bff; font-size: 1.75rem; font-weight: 600; }}
                         .section {{ margin-bottom: 20px; }}
-                        .output {{ background-color: #f4f4f4; padding: 15px; border: 1px solid #ddd; 
-                                  white-space: pre-wrap; word-wrap: break-word; border-radius: 5px; transition: background-color 0.3s ease; }}
-                        .output:hover {{ background-color: #e9ecef; }}
-                    </style></head><body class="container"><h1>Domain Website: {domain}</h1>""")
-        
+                        .card {{ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: none; }}
+                        .card-header {{ background-color: #007bff; color: white; font-size: 1.25rem; font-weight: bold; }}
+                        .card-body {{ background-color: #f4f4f4; max-height: 300px; overflow-y: scroll; padding: 15px; border-radius: 5px; }}
+                        .output {{ white-space: pre-wrap; word-wrap: break-word; }}
+                    </style></head><body class="container">
+                    <h1>Domain Website: {domain}</h1>""")
+
         file_titles = {
             "cmseek_output.txt": "Cek CMS",
             "subdomainizer_output.txt": "Cari subdomain",
@@ -96,10 +98,16 @@ def main():
         for filename, title in file_titles.items():
             with open(f"{output_folder}/{filename}", 'r') as content_file:
                 content = content_file.read()
-                f.write(f"""<div class="section"><h2>{title}</h2><div class="output"><pre>{content}</pre></div></div>""")
-        
+                f.write(f"""
+                    <div class="section">
+                        <div class="card">
+                            <div class="card-header">{title}</div>
+                            <div class="card-body output"><pre>{content}</pre></div>
+                        </div>
+                    </div>""")
+
         f.write("</body></html>")
-    
+        
     print("Selesai! Hasil scan telah tersimpan di folder results berupa HTML!")
 
 if __name__ == "__main__":
