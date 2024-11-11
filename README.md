@@ -45,18 +45,16 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini:
    python3 ngerecon.py
 
 📥 Clone Repository
-Clone repositori ini ke mesin lokal kamu menggunakan Git:
-   ```bash
-   git clone https://github.com/username/repository-name.git
+Clone repositori ini ke mesin lokal kamu menggunakan Git: git clone https://github.com/username/repository-name.git
 
 🤝 Kontribusi
 Jika Anda ingin berkontribusi pada proyek ini, ikuti langkah-langkah berikut:
 
-    Fork repositori ini.
-    Buat branch baru untuk perubahan Anda (git checkout -b feature/fitur-baru).
-    Commit perubahan Anda (git commit -am 'Menambahkan fitur baru').
-    Push ke branch (git push origin feature/fitur-baru).
-    Buat pull request.
+1. Fork repositori ini.
+2. Buat branch baru untuk perubahan Anda (git checkout -b feature/fitur-baru).
+3. Commit perubahan Anda (git commit -am 'Menambahkan fitur baru').
+4. Push ke branch (git push origin feature/fitur-baru).
+5. Buat pull request.
 
 📜 Lisensi
 Proyek ini dilisensikan di bawah MIT License.
