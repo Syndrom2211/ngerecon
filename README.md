@@ -1,7 +1,7 @@
 # **nge-Recon - Toolkit Information Gathering**
-> Perkumpulan tools - tools reconaisance hasil karya developer/pentester yang dipadukan untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconaisance) 
+> Toolkit sederhana yang berfungsi sebagai wadah perkumpulan tools - tools reconaisance hasil karya developer/pentester yang dipadukan untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconaisance). Cukup masukin 1 domain, hasil berseleweran...
 
-![Project Banner]([link-to-your-banner-image.jpg](https://i.ibb.co.com/pLJf2BK/ngerecon1.jpg)])
+![Project Banner](https://i.ibb.co.com/pLJf2BK/ngerecon1.jpg)
 
 ## **Deskripsi Proyek**
 Deskripsi lengkap tentang proyek ini, tujuan, dan apa yang ingin dicapai. Jelaskan fitur utama dan manfaat dari proyek ini.
