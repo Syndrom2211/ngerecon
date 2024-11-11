@@ -43,7 +43,10 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini:
 4. Jalankan script:
    ```bash
    python3 ngerecon.py
-
+5. Masukan domain:
+   ```bash
+   contoh.com
+   
 ---
 
 ## 📥 **Clone Repository**
