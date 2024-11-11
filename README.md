@@ -57,7 +57,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini:
 Clone repositori ini ke mesin lokal kamu menggunakan Git: 
 - Clone:
    ```bash
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/Syndrom2211/ngerecon.git
 
 ---
 
