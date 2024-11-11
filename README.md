@@ -47,7 +47,10 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini:
 5. Masukan domain:
    ```bash
    contoh.com
-   
+6. Lihat hasil:
+   ```bash
+   results/hasil_nyari_info.html
+      
 ---
 
 ## 📥 **Clone Repository**
