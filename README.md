@@ -2,7 +2,7 @@
 > Toolkit sederhana UNIX yang berfungsi sebagai wadah perkumpulan tools-tools reconaissance hasil karya developer/pentester untuk mengefisienkan waktu dalam melakukan proses pentest (information gathering/reconnaissance). Cukup masukin 1 domain, hasil berseleweran... wus.. wus.. ✨
 
 ![Project Banner](https://i.ibb.co/pLJf2BK/ngerecon1.jpg)
-![Project Banner](https://i.ibb.co/z2cbzMx/ngerecon2.jpg)
+![Project Banner](https://i.ibb.co.com/n6qJGdL/ngerecon2.jpg)
 
 ---
 
