@@ -1,9 +1,5 @@
 #!/bin/bash
 
-INSTALL_DIR="$HOME/tools"
-mkdir -p "$INSTALL_DIR"
-cd "$INSTALL_DIR"
-
 git_clone() {
     local repo_url=$1
     local tool_name=$2
@@ -30,14 +26,9 @@ if ! command -v whois &> /dev/null; then
     echo "whois tidak ditemukan, menginstal whois..."
     sudo apt-get update
     sudo apt-get install -y whois
-    sudo apt-get install dirsearch
-    sudo apt-get install paramspider
 else
     echo "whois sudah terinstal."
-    echo "dirsearch sudah terinstal."
-    echo "paramspider sudah terinstal."
 fi
 
 echo "Semua alat telah diunduh dan diinstal!"
 echo "Skrip selesai! Anda dapat memulai penggunaan alat-alat tersebut."
-
